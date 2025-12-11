@@ -1,2 +1,6 @@
-name: kubectl - command-line tool
-uses: asonnleitner/kubectl@master
+steps:
+- uses: actions/checkout@master
+- uses: goit/setup-resharper@v3
+  with:
+    version: '2021.2'
+- run: InspectCode <solution file>
