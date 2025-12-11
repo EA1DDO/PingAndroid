@@ -1,0 +1,1 @@
+Replace this placeholder with alert_sound.mp3 if you want a custom sound.
