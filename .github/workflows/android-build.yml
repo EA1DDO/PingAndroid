@@ -1,13 +1,10 @@
-- name: Build debug APK
-  run: ./gradlew assembleDebug --stacktrace --info --debug
+name: Android APK Build
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
@@ -31,6 +28,10 @@ jobs:
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
+        with:
+          name: PingMonitorApp-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
+
         with:
           name: PingMonitorApp-debug
           path: app/build/outputs/apk/debug/app-debug.apk
