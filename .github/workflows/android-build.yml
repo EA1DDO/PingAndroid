@@ -31,7 +31,3 @@ jobs:
         with:
           name: PingMonitorApp-debug
           path: app/build/outputs/apk/debug/app-debug.apk
-
-        with:
-          name: PingMonitorApp-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
